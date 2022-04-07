@@ -140,3 +140,24 @@ hashmap.c:51:8: error: implicit declaration of function ‘createpair’; did yo
 cc1: all warnings being treated as errors
 Compilation failed
 3a85d3a
+Thu Apr  7 16:06:06 UTC 2022: 
+ hashmap.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:48:3: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+   if(map->buckets[idx]!=NULL)
+   ^~
+hashmap.c:50:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+     map->buckets[idx]->value=value;
+     ^~~
+hashmap.c:51:3: error: ‘else’ without a previous ‘if’
+   else createpair(key,value);
+   ^~~~
+hashmap.c:51:8: error: implicit declaration of function ‘createpair’; did you mean ‘createPair’? [-Werror=implicit-function-declaration]
+   else createpair(key,value);
+        ^~~~~~~~~~
+        createPair
+cc1: all warnings being treated as errors
+Compilation failed
+5ae266a
