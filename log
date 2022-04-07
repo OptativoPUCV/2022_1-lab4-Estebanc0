@@ -2,3 +2,14 @@ Thu Apr  7 15:12:37 UTC 2022:
  tests:  0|6
 total_score: 0/70
 a85f98d
+Thu Apr  7 15:26:24 UTC 2022: 
+ hashmap.c | 3 +++
+ 1 file changed, 3 insertions(+)
+In file included from test.c:4:0:
+test.c: In function ‘createMap’:
+hashmap.c:57:15: error: ‘new’ is used uninitialized in this function [-Werror=uninitialized]
+   new->current=-1;
+   ~~~~~~~~~~~~^~~
+cc1: all warnings being treated as errors
+Compilation failed
+79b4229

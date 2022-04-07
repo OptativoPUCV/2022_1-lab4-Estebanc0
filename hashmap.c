@@ -52,7 +52,10 @@ void enlarge(HashMap * map) {
 
 
 HashMap * createMap(long capacity) {
-
+  HashMap *new;
+  
+  new->current=-1;
+  
     return NULL;
 }
 
