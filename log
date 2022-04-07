@@ -56,3 +56,19 @@ hashmap.c:59:15: error: statement with no effect [-Werror=unused-value]
 cc1: all warnings being treated as errors
 Compilation failed
 f25a1c9
+Thu Apr  7 15:40:36 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘createMap’:
+hashmap.c:59:30: error: ‘capcity’ undeclared (first use in this function); did you mean ‘capacity’?
+   new->buckets=(Pair*)malloc(capcity*sizeof(pair));
+                              ^~~~~~~
+                              capacity
+hashmap.c:59:30: note: each undeclared identifier is reported only once for each function it appears in
+hashmap.c:59:45: error: ‘pair’ undeclared (first use in this function); did you mean ‘Pair’?
+   new->buckets=(Pair*)malloc(capcity*sizeof(pair));
+                                             ^~~~
+                                             Pair
+Compilation failed
+d6fb421
