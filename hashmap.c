@@ -56,8 +56,8 @@ HashMap * createMap(long capacity) {
   new=(HashMap*)malloc(capacity*sizeof(HashMap));
   new->current=-1;
   new->capacity=capacity;
-  new->buckets=NULL;
-    return new;
+  new->buckets[NULL];
+  return new;
 }
 
 void eraseMap(HashMap * map,  char * key) {    

@@ -35,3 +35,13 @@ Thu Apr  7 15:33:18 UTC 2022:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 ca97b3d
+Thu Apr  7 15:37:41 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘createMap’:
+hashmap.c:59:15: error: array subscript is not an integer
+   new->buckets[NULL];
+               ^
+Compilation failed
+0c2afa7
