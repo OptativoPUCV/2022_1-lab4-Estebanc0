@@ -24,3 +24,9 @@ hashmap.c:59:15: error: ‘*new->buckets’ is a pointer; did you mean to use �
                ->
 Compilation failed
 9c1c0ac
+Thu Apr  7 15:33:09 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|6
+total_score: 0/70
+14d6a48
