@@ -173,3 +173,9 @@ hashmap.c:51:9: error: implicit declaration of function ‘createpair’; did yo
 cc1: all warnings being treated as errors
 Compilation failed
 278a57e
+Thu Apr  7 16:06:43 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  1|5
+total_score: 10/70
+9e2ad2c
