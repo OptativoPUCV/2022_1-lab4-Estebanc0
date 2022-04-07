@@ -45,3 +45,14 @@ hashmap.c:59:15: error: array subscript is not an integer
                ^
 Compilation failed
 0c2afa7
+Thu Apr  7 15:37:54 UTC 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘createMap’:
+hashmap.c:59:15: error: statement with no effect [-Werror=unused-value]
+   new->buckets[10];
+   ~~~~~~~~~~~~^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+f25a1c9
