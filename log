@@ -161,3 +161,15 @@ hashmap.c:51:8: error: implicit declaration of function ‘createpair’; did yo
 cc1: all warnings being treated as errors
 Compilation failed
 5ae266a
+Thu Apr  7 16:06:31 UTC 2022: 
+ hashmap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:51:9: error: implicit declaration of function ‘createpair’; did you mean ‘createPair’? [-Werror=implicit-function-declaration]
+   }else createpair(key,value);
+         ^~~~~~~~~~
+         createPair
+cc1: all warnings being treated as errors
+Compilation failed
+278a57e
