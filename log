@@ -107,3 +107,36 @@ Thu Apr  7 15:49:16 UTC 2022:
  tests:  1|5
 total_score: 10/70
 dfa5159
+Thu Apr  7 16:05:12 UTC 2022: 
+ hashmap.c | 12 ++++++++++--
+ 1 file changed, 10 insertions(+), 2 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:44:26: error: expected ‘)’ before ‘!’ token
+   while(map->buckets[idx]!NULL && map->buckets[idx]->key !=NULL){
+                          ^
+hashmap.c:45:21: error: ‘mao’ undeclared (first use in this function); did you mean ‘map’?
+     if(is_equal(key,mao->buckets[idx]->key)==1) return;
+                     ^~~
+                     map
+hashmap.c:45:21: note: each undeclared identifier is reported only once for each function it appears in
+hashmap.c:46:10: error: ‘idk’ undeclared (first use in this function); did you mean ‘idx’?
+     idx=(idk+1)%map->capacity;
+          ^~~
+          idx
+hashmap.c:48:3: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+   if(map->buckets[idx]!=NULL)
+   ^~
+hashmap.c:50:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+     map->buckets[idx]->value=value;
+     ^~~
+hashmap.c:51:3: error: ‘else’ without a previous ‘if’
+   else createpair(key,value);
+   ^~~~
+hashmap.c:51:8: error: implicit declaration of function ‘createpair’; did you mean ‘createPair’? [-Werror=implicit-function-declaration]
+   else createpair(key,value);
+        ^~~~~~~~~~
+        createPair
+cc1: all warnings being treated as errors
+Compilation failed
+3a85d3a
