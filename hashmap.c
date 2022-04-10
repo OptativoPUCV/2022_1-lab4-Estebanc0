@@ -87,7 +87,7 @@ Pair * firstMap(HashMap * map) {
     for (long idx=0; idx<map->capacity;idx++){
         if(map->buckets[idx]->key!=NULL || map->buckets[idx]!=NULL){
             map->current=idx;
-            return map->buckets[idx];
+            return map->buckets[0];
         }
     }
     return NULL;
