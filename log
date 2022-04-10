@@ -321,3 +321,8 @@ hashmap.c:55:6: note: declared here
 cc1.exe: all warnings being treated as errors
 Compilation failed
 2d7c44a
+do., 10 de abr. de 2022 15:08:04: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+b7b3185
