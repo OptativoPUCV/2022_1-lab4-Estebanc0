@@ -219,3 +219,14 @@ do., 10 de abr. de 2022 11:39:25:
  tests:  6|4
 total_score: 30/70
 775868b
+do., 10 de abr. de 2022 11:41:01: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function 'nextMap':
+hashmap.c:101:23: error: return makes pointer from integer without a cast [-Werror=int-conversion]
+             return map->current;
+                    ~~~^~~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+dda1c78
