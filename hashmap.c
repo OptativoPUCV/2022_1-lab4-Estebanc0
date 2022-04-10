@@ -57,7 +57,8 @@ void enlarge(HashMap * map) {
     enlarge_called = 1; //no borrar (testing purposes)
     HashMap *aux= createMap(map->capacity);
     for(long idx=0;idx<map->capacity;idx++){
-        insertMap(aux, map->buckets[idx]->key,map->buckets[idx]->value);
+        aux->buckets[idx]->key== map->buckets[idx]->key;
+        aux->buckets[idx]->value== map->buckets[idx]->value;
     }
     map->capacity=map->capacity*2;
     map->size=0;

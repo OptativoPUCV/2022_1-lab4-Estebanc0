@@ -326,3 +326,17 @@ do., 10 de abr. de 2022 15:08:04:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 b7b3185
+do., 10 de abr. de 2022 15:11:29: 
+ hashmap.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function 'enlarge':
+hashmap.c:60:31: error: statement with no effect [-Werror=unused-value]
+         aux->buckets[idx]->key== map->buckets[idx]->key;
+         ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+hashmap.c:61:33: error: statement with no effect [-Werror=unused-value]
+         aux->buckets[idx]->value== map->buckets[idx]->value;
+         ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+e8142bf
