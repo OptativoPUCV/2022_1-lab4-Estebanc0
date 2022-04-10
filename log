@@ -274,3 +274,9 @@ do., 10 de abr. de 2022 12:01:59:
  1 file changed, 3 insertions(+), 3 deletions(-)
  tests:  0|0
 c3585db
+do., 10 de abr. de 2022 12:05:00: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  13|2
+total_score: 50/70
+e76b084
